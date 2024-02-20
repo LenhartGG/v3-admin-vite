@@ -219,6 +219,63 @@ export const constantRoutes: RouteRecordRaw[] = [
         }
       }
     ]
+  },
+  {
+    path: "/studyVue",
+    name: "studyVue",
+    component: Layout,
+    redirect: "/studyVue/composables",
+    meta: {
+      title: "studyVue",
+      elIcon: "Grid"
+    },
+    children: [
+      {
+        path: "composables",
+        component: () => import("@/views/vue3/composables.vue"),
+        name: "composables",
+        meta: {
+          title: "组合式函数",
+          svgIcon: "dashboard"
+        }
+      },
+      {
+        path: "handling-input",
+        component: () => import("@/views/vue3/handling-input.vue"),
+        name: "handling-input",
+        meta: {
+          title: "用户输入",
+          svgIcon: "dashboard"
+        }
+      },
+      {
+        path: "grid",
+        component: () => import("@/views/vue3/grid/index.vue"),
+        name: "grid",
+        meta: {
+          title: "网格组件",
+          svgIcon: "dashboard"
+        }
+      },
+      {
+        path: "conditionals-and-loops",
+        component: () => import("@/views/vue3/conditionals-and-loops.vue"),
+        name: "grid",
+        meta: {
+          title: "条件和循环",
+          svgIcon: "dashboard"
+        }
+      },
+      {
+        path: "tree",
+        component: () => import("@/views/vue3/tree.vue"),
+        name: "grid",
+        meta: {
+          title: "树状视图",
+          svgIcon: "dashboard"
+        }
+      }
+    ]
   }
 ]
 
