@@ -274,6 +274,15 @@ export const constantRoutes: RouteRecordRaw[] = [
           title: "todomvc",
           svgIcon: "dashboard"
         }
+      },
+      {
+        path: "crud",
+        component: () => import("@/views/vue3/crud.vue"),
+        name: "crud",
+        meta: {
+          title: "crud",
+          svgIcon: "dashboard"
+        }
       }
     ]
   }
