@@ -250,7 +250,7 @@ export const constantRoutes: RouteRecordRaw[] = [
       },
       {
         path: "grid",
-        component: () => import("@/views/vue3/grid/index.vue"),
+        component: () => import("@/views/vue3/grid.vue"),
         name: "grid",
         meta: {
           title: "网格组件",
@@ -260,18 +260,9 @@ export const constantRoutes: RouteRecordRaw[] = [
       {
         path: "conditionals-and-loops",
         component: () => import("@/views/vue3/conditionals-and-loops.vue"),
-        name: "grid",
+        name: "conditionals-and-loops",
         meta: {
           title: "条件和循环",
-          svgIcon: "dashboard"
-        }
-      },
-      {
-        path: "tree",
-        component: () => import("@/views/vue3/tree.vue"),
-        name: "grid",
-        meta: {
-          title: "树状视图",
           svgIcon: "dashboard"
         }
       }

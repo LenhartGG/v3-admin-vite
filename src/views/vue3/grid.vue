@@ -3,7 +3,7 @@
 -->
 
 <script setup>
-import DemoGrid from "./grid-table.vue"
+import DemoGrid from "./components/grid-table.vue"
 import { ref } from "vue"
 
 const searchQuery = ref("")
