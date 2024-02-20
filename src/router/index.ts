@@ -265,6 +265,15 @@ export const constantRoutes: RouteRecordRaw[] = [
           title: "条件和循环",
           svgIcon: "dashboard"
         }
+      },
+      {
+        path: "todomvc",
+        component: () => import("@/views/vue3/todomvc.vue"),
+        name: "todomvc",
+        meta: {
+          title: "todomvc",
+          svgIcon: "dashboard"
+        }
       }
     ]
   }
